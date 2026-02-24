@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LHS MSA Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="top-banner">
+        <h1>Welcome to the Muslim Student Association</h1>
+    </header>
+
+    <main class="hero-container">
+        <div class="content-left">
+            <h2 class="main-title">Muslim Students<br>Association</h2>
+            <p class="mission-statement">
+                Our goal is to educate others and create a passion within students for our organization.
+            </p>
+        </div>
+
+        <div class="content-right">
+            <div class="logo-section">
+                <img src="lhs-msa-logo.png" alt="LHS MSA Logo" class="main-logo">
+            </div>
+            <div class="image-section">
+                <img src="students-working.jpg" alt="MSA Students Working" class="activity-image">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* You can swap this for a custom Google Font */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Blue Top Banner */
+.top-banner {
+    background-color: #5BA8E2; /* Matching the sky blue in your screenshot */
+    padding: 15px;
+    text-align: center;
+}
+
+.top-banner h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Layout Container */
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Text Section */
+.content-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    color: #3D5A6C; /* The dark slate blue color from your text */
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.mission-statement {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    max-width: 400px;
+}
+
+/* Right Media Section */
+.content-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 300px;
+}
+
+.main-logo {
+    width: 250px;
+    height: auto;
+}
+
+.activity-image {
+    width: 280px;
+    border-radius: 40px; /* Matching the rounded corners in your design */
+    object-fit: cover;
+}
+
+/* Mobile Responsiveness (The 'Mobile' view in your screenshot) */
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-left {
+        margin-bottom: 40px;
+    }
+
+    .mission-statement {
+        margin: 0 auto;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+}
