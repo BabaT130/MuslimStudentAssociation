@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Blue Top Banner */
+.top-banner {
+    background-color: #5BA8E2;
+    padding: 15px;
+    text-align: center;
+}
+
+.top-banner h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    gap: 10px;
+    padding: 12px 5%;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #3D5A6C;
+    font-size: 1rem;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: #e8f2fb;
+}
+
+.nav-link.active {
+    background-color: #5BA8E2;
+    color: #fff;
+}
+
+/* Layout Container */
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Text Section */
+.content-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    color: #3D5A6C;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.mission-statement {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    max-width: 400px;
+}
+
+/* Right Media Section */
+.content-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 300px;
+}
+
+.main-logo {
+    width: 250px;
+    height: auto;
+}
+
+.activity-image {
+    width: 280px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-left {
+        margin-bottom: 40px;
+    }
+
+    .mission-statement {
+        margin: 0 auto;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+}
