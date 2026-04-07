@@ -98,6 +98,64 @@ body {
     object-fit: cover;
 }
 
+/* Page Container (non-hero pages) */
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 10%;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: #3D5A6C;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Officers Grid */
+.officers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.officer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.officer-photo-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #5BA8E2;
+    margin-bottom: 16px;
+}
+
+.officer-photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.officer-name {
+    font-size: 1.1rem;
+    color: #3D5A6C;
+    margin-bottom: 6px;
+}
+
+.officer-role {
+    font-size: 0.95rem;
+    color: #666;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 1024px) {
     .hero-container {
@@ -115,5 +173,15 @@ body {
 
     .main-title {
         font-size: 2.5rem;
+    }
+
+    .officers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .officers-grid {
+        grid-template-columns: 1fr;
     }
 }
