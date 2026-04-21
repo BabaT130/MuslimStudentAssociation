@@ -9,11 +9,11 @@ body {
 
 
 .top-banner {
-    background-color: #47A2E7;
+    background-color: #47A2E7; 
     padding: 10px;
     color: #1E1E1E; 
+    text-align: center; 
 }
-
 
 .navbar {
     display: flex;
