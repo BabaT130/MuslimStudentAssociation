@@ -7,11 +7,13 @@ body {
 }
 
 
-
 .top-banner {
     background-color: #47A2E7; 
-    padding: 10px;
-    color: #1E1E1E; 
+    padding: 15px; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center; 
 }
 
