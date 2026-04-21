@@ -167,6 +167,36 @@ body {
     min-width: 85px;
 }
 
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 51, 102, 0.15);
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.gallery-item {
+    width: 300px;
+}
+
+.top-banner {
+    background-color: #47A2E7; 
+    padding: 15px; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 1024px) {
     .hero-container { flex-direction: column; text-align: center; }

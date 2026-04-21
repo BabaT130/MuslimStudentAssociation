@@ -5,6 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LHS MSA Resources</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .resources-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 8%;
+        }
+
+        .section-heading {
+            font-size: 2.2rem;
+            color: #3D5A6C;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Links Section */
+        .links-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 70px;
+            flex-wrap: wrap;
+        }
+
+        .resource-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            padding: 30px 40px;
+            border: 1px solid #edf2f7;
+            border-radius: 20px;
+            background: white;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .resource-item:hover {
+            border-color: #47A2E7;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transform: translateY(-3px);
+        }
+
+        .resource-label {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #3D5A6C;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        /* Gallery Section */
+        .photo-gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            width: 320px;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: auto;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .gallery-img:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item { width: 100%; }
+            .links-section { flex-direction: column; align-items: center; }
+        }
+    </style>
 </head>
 <body>
 
@@ -20,6 +104,8 @@
     </nav>
 
     <main class="resources-container">
+
+        <h2 class="section-heading">Connect With Us</h2>
         <section class="links-section">
             <div class="resource-item">
                 <span class="resource-label">Join Us</span>
@@ -31,11 +117,11 @@
             </div>
         </section>
 
+        <h2 class="section-heading">Photo Gallery</h2>
         <section class="photo-gallery">
-            <img src="journal-craft.jpg" alt="Journaling Activity" class="gallery-img">
-            <img src="students-stickers.jpg" alt="Students with Stickers" class="gallery-img">
-            <img src="group-activity.jpg" alt="MSA Group Activity" class="gallery-img">
+            <div class="gallery-item"><img src="journal-craft.jpg" alt="Journaling Activity" class="gallery-img"></div>
         </section>
+
     </main>
 
 </body>
