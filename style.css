@@ -1,11 +1,10 @@
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    line-height: 1.6;
 }
-
 
 .top-banner {
     background-color: #47A2E7; 
@@ -23,6 +22,7 @@ body {
     gap: 20px;
     padding: 15px 0;
     background-color: #fff;
+    border-bottom: 1px solid #eee;
 }
 
 .nav-link {
@@ -38,26 +38,20 @@ body {
     background-color: #47A2E7;
     color: white;
 }
-.nav-link:hover {
-    background-color: #e8f2fb;
-}
-
-
 
 .hero-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start; 
+    align-items: center; /* Changed from flex-start to fix vertical alignment */
     justify-content: space-between;
     padding: 80px 8%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-
 .content-left {
     flex: 1;
-    min-width: 300px;
+    min-width: 350px;
 }
 
 .main-title {
@@ -65,120 +59,117 @@ body {
     color: #3D5A6C;
     font-weight: 900;
     line-height: 1.05;
-    margin-bottom: 25px;
-    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
     -webkit-text-stroke: 1.5px #3D5A6C; 
 }
 
 .mission-statement {
     font-size: 1.4rem;
-    line-height: 1.4;
     color: #1E1E1E;
     max-width: 450px;
+    margin-bottom: 30px;
 }
 
+.cta-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #47A2E7;
+    color: white !important; 
+    text-decoration: none !important; 
+    font-weight: 700;
+    border-radius: 50px;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(71, 162, 231, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #264F66;
+    transform: translateY(-3px);
+}
 
 .content-right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
+
 .main-logo {
     width: 250px;
     height: auto;
 }
 
 .activity-image {
-    width: 280px;
+    width: 320px;
     border-radius: 40px;
-    object-fit: cover;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
+.stats-section {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 60px 10%;
+    background-color: #f8fbfe;
+    border-top: 1px solid #edf2f7;
+}
 
-.page-container {
-    max-width: 1200px;
+.stat-card { text-align: center; }
+.stat-card h3 {
+    font-size: 2.8rem;
+    color: #47A2E7;
+    margin: 0;
+    font-weight: 900;
+}
+.stat-card p {
+    color: #64748b;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.events-preview {
+    padding: 80px 10%;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 50px 10%;
 }
 
-.page-title {
-    font-size: 2.5rem;
+.section-heading {
+    font-size: 2.2rem;
     color: #3D5A6C;
     margin-bottom: 40px;
     text-align: center;
 }
 
-/* Officers Grid */
-.officers-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.officer-card {
+.event-card {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 25px;
+    padding: 25px;
+    border: 1px solid #edf2f7;
+    border-radius: 20px;
+    background: white;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    border-color: #47A2E7;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.event-date {
+    background-color: #47A2E7;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 800;
     text-align: center;
-    padding: 30px 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-}
-
-.officer-photo-placeholder {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #5BA8E2;
-    margin-bottom: 16px;
-}
-
-.officer-photo-placeholder img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.officer-name {
-    font-size: 1.1rem;
-    color: #3D5A6C;
-    margin-bottom: 6px;
-}
-
-.officer-role {
-    font-size: 0.95rem;
-    color: #666;
+    min-width: 85px;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 1024px) {
-    .hero-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .content-left {
-        margin-bottom: 40px;
-    }
-
-    .mission-statement {
-        margin: 0 auto;
-    }
-
-    .main-title {
-        font-size: 2.5rem;
-    }
-
-    .officers-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .officers-grid {
-        grid-template-columns: 1fr;
-    }
+    .hero-container { flex-direction: column; text-align: center; }
+    .main-title { font-size: 3rem; }
+    .stats-section { flex-direction: column; gap: 40px; }
 }
