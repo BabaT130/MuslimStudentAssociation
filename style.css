@@ -13,10 +13,10 @@ body {
     text-align: center;
 }
 
-.top-banner h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 400;
+.top-banner {
+    background-color: #47A2E7;
+    padding: 10px;
+    color: #1E1E1E; 
 }
 
 /* Navigation */
@@ -42,7 +42,7 @@ body {
 }
 
 .nav-link.active {
-    background-color: #5BA8E2;
+    background-color: #47A2E7;
     color: #fff;
 }
 
