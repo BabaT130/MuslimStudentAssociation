@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,12 +6,7 @@ body {
     color: #333;
 }
 
-/* Blue Top Banner */
-.top-banner {
-    background-color: #47A2E7; 
-    padding: 12px;
-    text-align: center;
-}
+
 
 .top-banner {
     background-color: #47A2E7;
@@ -19,7 +14,7 @@ body {
     color: #1E1E1E; 
 }
 
-/* Navigation */
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -46,7 +41,7 @@ body {
 }
 
 
-/* Layout Container */
+
 .hero-container {
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +52,7 @@ body {
     margin: 0 auto;
 }
 
-/* Left Text Section */
+
 .content-left {
     flex: 1;
     min-width: 300px;
@@ -80,7 +75,7 @@ body {
     max-width: 450px;
 }
 
-/* Right Media Section */
+
 .content-right {
     flex: 1;
     display: flex;
@@ -101,7 +96,7 @@ body {
     object-fit: cover;
 }
 
-/* Page Container (non-hero pages) */
+
 .page-container {
     max-width: 1200px;
     margin: 0 auto;
